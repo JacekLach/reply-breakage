@@ -1,0 +1,8 @@
+REPLy does not catch ctrl-c within commons-exec
+To run:
+  lein deps compile
+    java -cp "`lein classpath`" reply_breakage.core "java -cp '`lein
+    classpath`' reply.ReplyMain"
+
+Loading the REPL might take a while.
+CTRL-C will kill the java process and (when using bash) mess up the terminal.
